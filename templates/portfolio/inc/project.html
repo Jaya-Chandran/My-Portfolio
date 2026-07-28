@@ -1,0 +1,65 @@
+{% load static %}
+<section id="projects" class="py-5">
+  <div class="container">
+    <div class="section-title">
+      <h2><i class="fas fa-laptop-code"></i> Selected Projects</h2>
+      <p>Upload and showcase your front-end and back-end work with distinct project views.</p>
+    </div>
+
+    <div class="projects-category mb-5">
+      <h3 class="mb-4">Frontend Projects</h3>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card project-card">
+            <img src="{% static 'images/portfolio.png' %}" class="card-img-top" alt="Portfolio Frontend">
+            <div class="card-body">
+              <div class="project-label">Frontend</div>
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">A responsive front-end project built with HTML, CSS, and JavaScript to present your work, skills, and contact section.</p>
+              <a href="https://jaya-chandran.github.io/My-portfolio/" class="btn btn-primary">View Frontend</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card project-card">
+            <img src="{% static 'images/calculator.png' %}" class="card-img-top" alt="UI Frontend">
+            <div class="card-body">
+              <div class="project-label">Frontend</div>
+              <h5 class="card-title">Calculator App</h5>
+              <p class="card-text">A polished UI prototype using JavaScript and Bootstrap, ideal for demonstrating interactive front-end skills.</p>
+              <a href="https://jaya-chandran.github.io/calculator/" class="btn btn-primary">View Frontend</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-category">
+      <h3 class="mb-4">Backend Projects</h3>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card project-card">
+            <img src="{% static 'images/shopcart.png' %}" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="project-label">Backend</div>
+              <h5 class="card-title">E-commerce Shop Cart</h5>
+              <p class="card-text">A full-stack Django e-commerce application featuring user authentication, product management, shopping cart, order processing, and an admin dashboard.</p>
+              <a href="https://shopcart-utrs.onrender.com/" class="btn btn-primary">View Backend</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card project-card">
+            <img src="{% static 'images/backend-dashboard.png' %}" class="card-img-top" alt="">
+            <div class="card-body">
+              <div class="project-label">Backend</div>
+              <h5 class="card-title">Riyadvi Software Solution</h5>
+              <p class="card-text">A responsive Django web application with authentication, database integration, and business management features.</p>
+              <a href="#" class="btn btn-primary">View Backend</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

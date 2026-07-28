@@ -1,0 +1,74 @@
+{% load static %}
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="section-title">
+      <h2><i class="fas fa-user-circle"></i> About Me</h2>
+      <p>Experienced fresher with a strong foundation in web development. Passionate about designing premium user experiences and building scalable Python applications.</p>
+    </div>
+
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-5">
+        <img src="{% static 'images/jay.jpg' %}" alt="Jaya Chandran" class="img-fluid">
+      </div>
+      <div class="col-lg-7">
+        <span class="profile-badge">Web Developer & Designer</span>
+        <h3>Hi, I'm Jaya — a creative problem solver who turns ideas into polished web products.</h3>
+        <p class="mt-4">My skills include Python, Django, HTML, CSS, Bootstrap, and JavaScript. I enjoy creating intuitive front-end layouts, optimizing backend workflows, and delivering end-to-end solutions with a professional design focus.</p>
+
+        <ul class="about-list">
+          <li>Strong web development fundamentals in Python and modern front-end technologies</li>
+          <li>Experience building responsive UI with Bootstrap and custom CSS</li>
+          <li>Passionate about clean code, fast performance, and elegant design</li>
+        </ul>
+
+        <div class="row stats-grid mt-4">
+          {% comment %} <div class="col-sm-6">
+            <div class="card stats-card">
+              <div class="stats-value">24+</div>
+              <div class="stats-label">Projects & exercises</div>
+            </div>
+          </div> {% endcomment %}
+          {% comment %} <div class="col-sm-6">
+            <div class="card stats-card">
+              <div class="stats-value">2</div>
+              <div class="stats-label">Education backgrounds</div>
+            </div>
+          </div> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="py-5">
+  <div class="container">
+    <div class="section-title">
+      <h2><i class="fas fa-graduation-cap"></i> Education & Training</h2>
+      <p>A curated overview of my academic journey and professional learning path.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card about-card p-4">
+          <h4 class="mb-3">Master of Computer Application (MCA)</h4>
+          <p class="text-muted">Madras University - Correspondence</p>
+          <p>Chennai, India | 2024 - 2026 (Ongoing)</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card about-card p-4">
+          <h4 class="mb-3">Bachelor of Computer Application (BCA)</h4>
+          <p class="text-muted">Dr. M.G.R Educational And Research Institute University</p>
+          <p>Chennai, India | 2019 - 2022</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card about-card p-4">
+          <h4 class="mb-3">Full Stack Python Developer</h4>
+          <p class="text-muted">i5 Technologies</p>
+          <p>Chennai, India | 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
