@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
-from logging import config
 from pathlib import Path
 import os
 
@@ -24,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv(
     "SECRET_KEY",
-    "django-insecure-=*%e#ft4$y34nblb&8$&^$dmxpdd)q0(*#!dt!3oixk4$g=a*s"
+    "gkiu(yt5mmo#dvzqpxnlecn^479=+h7j_c-o4i717_0)omwk=x"
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -82,11 +81,11 @@ WSGI_APPLICATION = 'Myportfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST':config('DB_HOST'),
-        'PORT': config('DB_PORT'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST':os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
        
     }
 }
