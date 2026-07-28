@@ -29,9 +29,17 @@ SECRET_KEY = os.getenv(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["web-production-8c36d.up.railway.app", "127.0.0.1", "localhost"]
+import os
 
+ALLOWED_HOSTS = [
+    ".up.railway.app",
+    "localhost",
+    "127.0.0.1",
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.up.railway.app",
+]
 # Application definition
 
 INSTALLED_APPS = [
