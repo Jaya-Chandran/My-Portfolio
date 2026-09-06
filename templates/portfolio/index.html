@@ -1,22 +1,11 @@
-{%extends 'portfolio/layout/main.html'%}
-{%load static %}
+{% extends 'portfolio/layout/main.html' %}
+{% load static %}
 
-          
-{%block content%}
-     {%include 'portfolio/inc/home.html'%}
-     {%include 'portfolio/inc/about.html'%}
-     {%include 'portfolio/inc/skills.html'%}
-     {%include 'portfolio/inc/project.html'%}
-     {%include 'portfolio/inc/contact.html'%}
-{%endblock content%}
-
-
-
-
-
-
-
- 
-
-
-
+{% block content %}
+     {% include 'portfolio/inc/home.html' %}
+     {% include 'portfolio/inc/about.html' %}
+     {% include 'portfolio/inc/skills.html' %}
+     {% include 'portfolio/inc/project.html' %}
+     {% include 'portfolio/inc/experience_education.html' %}
+     {% include 'portfolio/inc/contact.html' %}
+{% endblock content %}

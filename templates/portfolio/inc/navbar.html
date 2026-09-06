@@ -1,21 +1,22 @@
-  <!--------------NavBar------------>
-
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#home">
-      <span class="brand-mark">JC</span>
-      <span class="brand-text">Jaya Chandran</span>
+{% load static %}
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <span class="brand-badge me-2">JC</span>
+      <span class="brand-text font-outfit fw-bold">Jaya <span class="text-accent">Chandran</span></span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav  ms-auto mb-2 gap-2 mb-lg-0">
+    <div class="collapse navbar-collapse" id="portfolioNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1 my-2 my-lg-0">
         <li class="nav-item">
-          <a class="nav-link "  href="#home">Home</a>
+          <a class="nav-link active" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a> 
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#skills">Skills</a>
@@ -24,7 +25,16 @@
           <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a href="#contact" class="btn btn-sm btn-gradient-outline rounded-pill px-3">Hire Me</a>
         </li>
       </ul>
     </div>

@@ -1,64 +1,72 @@
 {% load static %}
-<section id="projects" class="py-5">
+<section id="projects" class="section-padding position-relative">
   <div class="container">
-    <div class="section-title">
-      <h2><i class="fas fa-laptop-code"></i> Selected Projects</h2>
-      <p>Upload and showcase your front-end and back-end work with distinct project views.</p>
+    <div class="section-header text-center mb-5">
+      <span class="section-subtitle font-mono"><i class="fas fa-laptop-code me-2"></i>FEATURED WORK</span>
+      <h2 class="section-title font-outfit text-gradient">Featured Project</h2>
+      <div class="title-underline"></div>
+      <p class="section-desc text-muted mt-2">A showcase of full-stack backend applications and responsive web systems built with Python & Django.</p>
     </div>
 
-    {% comment %} <div class="projects-category mb-5">
-      <h3 class="mb-4">Frontend Projects</h3>
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="card project-card">
-            <img src="{% static 'images/portfolio.png' %}" class="card-img-top" alt="Portfolio Frontend">
-            <div class="card-body">
-              <div class="project-label">Frontend</div>
-              <h5 class="card-title">Portfolio Website</h5>
-              <p class="card-text">A responsive front-end project built with HTML, CSS, and JavaScript to present your work, skills, and contact section.</p>
-              <a href="https://jaya-chandran.github.io/My-portfolio/" class="btn btn-primary">View Frontend</a>
+    <!-- FEATURED PROJECT (Large Showcase Card) -->
+    <div class="featured-project-wrapper mb-2">
+      <div class="glass-card p-4 p-lg-5 position-relative overflow-hidden tilt-card featured-glow">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <div class="project-image-box rounded-4 overflow-hidden position-relative shadow-lg">
+              <img src="{% static 'images/shopcart.png' %}" alt="ShopCart E-Commerce" class="img-fluid project-img">
+              <div class="project-overlay d-flex align-items-center justify-content-center gap-3">
+                <a href="https://shopcart-utrs.onrender.com/" target="_blank" class="btn btn-gradient rounded-circle p-3" title="View Live Demo">
+                  <i class="fas fa-external-link-alt fs-5"></i>
+                </a>
+                <a href="https://github.com/Jaya-Chandran" target="_blank" class="btn btn-glass rounded-circle p-3" title="GitHub Code Repository">
+                  <i class="fab fa-github fs-5"></i>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card project-card">
-            <img src="{% static 'images/calculator.png' %}" class="card-img-top" alt="UI Frontend">
-            <div class="card-body">
-              <div class="project-label">Frontend</div>
-              <h5 class="card-title">Calculator App</h5>
-              <p class="card-text">A polished UI prototype using JavaScript and Bootstrap, ideal for demonstrating interactive front-end skills.</p>
-              <a href="https://jaya-chandran.github.io/calculator/" class="btn btn-primary">View Frontend</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> {% endcomment %}
 
-    <div class="projects-category">
-      <h3 class="mb-4">Backend Projects</h3>
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <div class="card project-card">
-            <img src="{% static 'images/shopcart.png' %}" class="card-img-top" alt="">
-            <div class="card-body">
-              <div class="project-label">Backend</div>
-              <h5 class="card-title">E-commerce Shop Cart</h5>
-              <p class="card-text">A full-stack Django e-commerce application featuring user authentication, product management, shopping cart, order processing, and an admin dashboard.</p>
-              <a href="https://shopcart-utrs.onrender.com/" class="btn btn-primary">View Backend</a>
+          <div class="col-lg-6 text-start">
+            <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+              <span class="badge bg-warning-subtle text-warning border border-warning-subtle rounded-pill px-3 py-1 font-mono">
+                <i class="fas fa-star me-1"></i> Featured Project
+              </span>
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-1 font-mono">
+                Full Stack Django
+              </span>
+            </div>
+
+            <h3 class="font-outfit fw-bold text-light display-6 mb-3">E-Commerce Shop Cart</h3>
+
+            <p class="text-secondary-light mb-3">
+              <strong>Problem Solved:</strong> Engineered a complete online store application handling end-to-end e-commerce workflows from product discovery to shopping cart total calculation and order persistence.
+            </p>
+
+            <ul class="featured-features-list small text-muted ps-0 mb-4">
+              <li><i class="fas fa-check text-accent me-2"></i> User Authentication (Register, Login, Session Persistence)</li>
+              <li><i class="fas fa-check text-accent me-2"></i> Dynamic Product Catalog & Category Filtering</li>
+              <li><i class="fas fa-check text-accent me-2"></i> Interactive Shopping Cart with Real-time Total Calculation</li>
+              <li><i class="fas fa-check text-accent me-2"></i> Order Processing Pipeline & Admin Dashboard Control</li>
+            </ul>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="skill-tag">Python 3.x</span>
+              <span class="skill-tag">Django ORM</span>
+              <span class="skill-tag">HTML5 / CSS3</span>
+              <span class="skill-tag">Bootstrap 5</span>
+              <span class="skill-tag">SQLite / PostgreSQL</span>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="https://shopcart-utrs.onrender.com/" target="_blank" class="btn btn-gradient rounded-pill px-4">
+                <i class="fas fa-external-link-alt me-2"></i> View Live Demo
+              </a>
+              <a href="https://github.com/Jaya-Chandran" target="_blank" class="btn btn-glass rounded-pill px-4">
+                <i class="fab fa-github me-2"></i> GitHub Repository
+              </a>
             </div>
           </div>
         </div>
-        {% comment %} <div class="col-lg-6">
-          <div class="card project-card">
-            <img src="{% static 'images/backend-dashboard.png' %}" class="card-img-top" alt="">
-            <div class="card-body">
-              <div class="project-label">Backend</div>
-              <h5 class="card-title">Riyadvi Software Solution</h5>
-              <p class="card-text">A responsive Django web application with authentication, database integration, and business management features.</p>
-              <a href="#" class="btn btn-primary">View Backend</a>
-            </div>
-          </div>
-        </div> {% endcomment %}
       </div>
     </div>
   </div>

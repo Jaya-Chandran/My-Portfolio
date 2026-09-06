@@ -1,72 +1,91 @@
 {% load static %}
-<section id="about" class="py-5">
+<section id="about" class="section-padding position-relative">
   <div class="container">
-    <div class="section-title">
-      <h2><i class="fas fa-user-circle"></i> About Me</h2>
-      <p>Experienced fresher with a strong foundation in web development. Passionate about designing premium user experiences and building scalable Python applications.</p>
+    <div class="section-header text-center mb-5">
+      <span class="section-subtitle font-mono"><i class="fas fa-terminal me-2"></i>WHO I AM</span>
+      <h2 class="section-title font-outfit text-gradient">About Me</h2>
+      <div class="title-underline"></div>
+      <p class="section-desc text-muted mt-2">Passionate Python & Django Full Stack Developer dedicated to engineering clean backends and responsive user interfaces.</p>
     </div>
 
     <div class="row align-items-center gy-5">
-      <div class="col-lg-5">
-        <img src="{% static 'images/jay.jpg' %}" alt="Jaya Chandran" class="img-fluid">
-      </div>
+      <!-- Left side: Bio & Info cards -->
       <div class="col-lg-7">
-        <span class="profile-badge">Web Developer & Designer</span>
-        <h3>Hi, I'm Jaya — a creative problem solver who turns ideas into polished web products.</h3>
-        <p class="mt-4">My skills include Python, Django, HTML, CSS, Bootstrap, and JavaScript. I enjoy creating intuitive front-end layouts, optimizing backend workflows, and delivering end-to-end solutions with a professional design focus.</p>
+        <div class="about-card p-4 p-md-5 glass-card tilt-card">
+          <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-2 font-mono">
+              <i class="fas fa-code me-1"></i> Full Stack Developer
+            </span>
+            <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-2 font-mono">
+              <i class="fas fa-check-circle me-1"></i> Available for Hire
+            </span>
+          </div>
 
-        <ul class="about-list">
-          <li>Strong web development fundamentals in Python and modern front-end technologies</li>
-          <li>Experience building responsive UI with Bootstrap and custom CSS</li>
-          <li>Passionate about clean code, fast performance, and elegant design</li>
-        </ul>
+          <h3 class="font-outfit fw-bold text-light mb-3">
+            Building robust web applications from database schema design to responsive frontends.
+          </h3>
 
-        <div class="row stats-grid mt-4">
-          {% comment %} <div class="col-sm-6">
-            <div class="card stats-card">
-              <div class="stats-value">24+</div>
-              <div class="stats-label">Projects & exercises</div>
+          <p class="text-secondary-light mb-4">
+            Hi, I'm <strong class="text-light">Jaya Chandran</strong> — a Full Stack Developer based in Chennai, India. My core expertise lies in developing scalable web backend systems using <strong class="text-accent">Python and Django</strong>, seamlessly integrated with intuitive, mobile-first interfaces using modern CSS3, HTML5, Bootstrap 5, and JavaScript.
+          </p>
+
+          <div class="row g-3 mt-2">
+            <div class="col-sm-6">
+              <div class="mini-feature-card p-3 rounded-3">
+                <i class="fab fa-python text-warning fs-3 mb-2"></i>
+                <h6 class="font-outfit text-light mb-1">Python & Django</h6>
+                <p class="small text-muted mb-0">RESTful APIs, MVC architecture & Django ORM model management.</p>
+              </div>
             </div>
-          </div> {% endcomment %}
-          {% comment %} <div class="col-sm-6">
-            <div class="card stats-card">
-              <div class="stats-value">2</div>
-              <div class="stats-label">Education backgrounds</div>
+            <div class="col-sm-6">
+              <div class="mini-feature-card p-3 rounded-3">
+                <i class="fas fa-layer-group text-info fs-3 mb-2"></i>
+                <h6 class="font-outfit text-light mb-1">Full Stack Development</h6>
+                <p class="small text-muted mb-0">Seamless end-to-end integration of frontend & backend services.</p>
+              </div>
             </div>
-          </div> {% endcomment %}
+            <div class="col-sm-6">
+              <div class="mini-feature-card p-3 rounded-3">
+                <i class="fas fa-database text-purple fs-3 mb-2"></i>
+                <h6 class="font-outfit text-light mb-1">Database Systems</h6>
+                <p class="small text-muted mb-0">MySQL, PostgreSQL & relational database optimization.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mini-feature-card p-3 rounded-3">
+                <i class="fas fa-mobile-alt text-success fs-3 mb-2"></i>
+                <h6 class="font-outfit text-light mb-1">Web Development</h6>
+                <p class="small text-muted mb-0">Mobile-first, high performance layouts with Bootstrap 5 & CSS Grid.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<section id="education" class="py-5">
-  <div class="container">
-    <div class="section-title">
-      <h2><i class="fas fa-graduation-cap"></i> Education & Training</h2>
-      <p>A curated overview of my academic journey and professional learning path.</p>
-    </div>
+      <!-- Right side: Interactive 3D Profile Card Visual -->
+      <div class="col-lg-5">
+        <div class="profile-3d-card glass-card text-center p-4 tilt-card">
+          <div class="profile-avatar-wrapper position-relative mx-auto mb-4">
+            <div class="avatar-glow"></div>
+            <img src="{% static 'images/jay.jpg' %}" alt="Jaya Chandran" class="profile-avatar-img rounded-circle img-fluid">
+            <div class="avatar-badge">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+          </div>
 
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <div class="card about-card p-4">
-          <h4 class="mb-3">Master of Computer Application (MCA)</h4>
-          <p class="text-muted">Madras University - Correspondence</p>
-          <p>Chennai, India | 2024 - 2026 (Ongoing)</p>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card about-card p-4">
-          <h4 class="mb-3">Bachelor of Computer Application (BCA)</h4>
-          <p class="text-muted">Dr. M.G.R Educational And Research Institute University</p>
-          <p>Chennai, India | 2019 - 2022</p>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card about-card p-4">
-          <h4 class="mb-3">Full Stack Python Developer</h4>
-          <p class="text-muted">i5 Technologies</p>
-          <p>Chennai, India | 2025</p>
+          <h4 class="font-outfit fw-bold text-light mb-1">Jaya Chandran</h4>
+          <p class="text-accent font-mono small mb-3">jaichandranr28@gmail.com</p>
+          <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+          </div>
+
+          <div class="profile-location d-flex justify-content-center align-items-center text-muted small font-mono">
+            <i class="fas fa-map-marker-alt text-danger me-2"></i> Chennai, Tamil Nadu, India
+          </div>
         </div>
       </div>
     </div>
