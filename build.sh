@@ -5,13 +5,18 @@ pip install -r requirements.txt
 python manage.py collectstatic --no-input
 python manage.py migrate
 
-# Auto-create superuser
+# Force create or update superuser password
 echo "
 from django.contrib.auth import get_user_model
 User = get_user_model()
-if not User.objects.filter(username='jai').exists():
-    User.objects.create_superuser('jai', 'jaichandranr28@gmail.com', os.environ['DJANGO_ADMIN_PASS'])
-    print('Superuser created!')
+if User.objects.filter(username='jai').exists():
+    u = User.objects.get(username='jai')
+    u.set_password('NewPassword@123')
+    u.is_staff = True
+    u.is_superuser = True
+    u.save()
+    print('Password updated!')
 else:
-    print('Superuser already exists.')
+    User.objects.create_superuser('jai', 'your@email.com', 'NewPassword@123')
+    print('Superuser created!')
 " | python manage.py shell
